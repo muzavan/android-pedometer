@@ -45,4 +45,3 @@ public class BodyWeightPreference extends EditMeasurementPreference {
 		mImperialUnitsResource = R.string.pounds;
 	}
 }
-

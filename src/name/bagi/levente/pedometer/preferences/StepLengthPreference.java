@@ -45,4 +45,3 @@ public class StepLengthPreference extends EditMeasurementPreference {
 		mImperialUnitsResource = R.string.inches;
 	}
 }
-
