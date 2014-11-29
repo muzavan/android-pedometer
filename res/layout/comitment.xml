@@ -3,38 +3,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="Jangka Waktu (Dalam Hari)" />
+
+    <EditText
+        android:id="@+id/jangkaWaktu"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="Jumlah Langkah Incaran (Sehat:1000 Langkah Sehari)" />
+
+    <EditText
+        android:id="@+id/jumlahStep"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="numberSigned" />
+    
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="Upoint yang dipertaruhkan"
+    />
     
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:id="@+id/jangkaWaktu"
-        android:inputType="numberSigned"
-        />
-    
-      <EditText
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:id="@+id/jumlahStep"
-        android:inputType="numberSigned"
-        />
-    
-        <EditText
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
         android:id="@+id/uPoint"
-        android:inputType="numberSigned"
-        />
-    
-        <EditText
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="1"
-        android:id="@+id/repeat"
-        android:inputType="numberSigned"
-        />
+        android:inputType="numberSigned" />
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="Jumlah Repetisi"
+    />
     
+    <EditText
+        android:id="@+id/repeat"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:inputType="numberSigned" />
+    
+    <Button 
+        android:id="@+id/saveButton"
+        android:text="Commit!"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>

@@ -1,6 +1,7 @@
 package name.bagi.levente.pedometer;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -20,6 +21,8 @@ public class Login extends Activity {
 		Log.i(TAG, "[ACTIVITY] onCreate");
 		super.onCreate(savedInstanceState);
 		loginButton = (Button) findViewById(R.id.loginButton);
+		Intent myIntent = new Intent(Login.this, Comitment.class);
+		Login.this.startActivity(myIntent);
 		textUsername = (EditText) findViewById(R.id.userName); 
 		textPassword = (EditText) findViewById(R.id.password);
 	}
